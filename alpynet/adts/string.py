@@ -7,7 +7,7 @@ from alpynet.adt import Sort, GenericSort
 from alpynet.adts.boolean import boolean
 
 
-_chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
           'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
           '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '_']
 
@@ -21,7 +21,7 @@ char = Sort('char')
 
 # ---------- Operations on characters ---------- #
 # Generators.
-for i, c in enumerate(_chars):
+for i, c in enumerate(chars):
     char.operation(c, ())
     if i < 26:
         char.operation(c.upper(), ())
@@ -36,13 +36,13 @@ char.variable('c2')
 
 
 # ---------- Rewrite rules on characters ---------- #
-for i, c in enumerate(_chars):
+for i, c in enumerate(chars):
     if i < 26:
         c_upper = c.upper()
     else:
         c_upper = None
 
-    for j, c2 in enumerate(_chars):
+    for j, c2 in enumerate(chars):
         if j < 26:
             c2_upper = c2.upper()
         else:

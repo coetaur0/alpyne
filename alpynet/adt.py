@@ -240,6 +240,16 @@ class Term(object):
            self.sort != other.sort:
             return (False, {})
 
+        if type(self.sort) == GenericSort and\
+           type(self.head) == Operation and\
+           self.head.name not in other.head.sort.__dict__:
+            return (False, {})
+
+        if type(other.sort) == GenericSort and\
+           type(other.head) == Operation and\
+           other.head.name not in self.head.sort.__dict__:
+            return (False, {})
+
         bindings = {}
 
         def compare(lhs, rhs):

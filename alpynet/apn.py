@@ -278,7 +278,6 @@ class AlgebraicPetriNet(object):
 
         Args:
             name: The name of the transition.
-            statements: A list of statements in the transition.
 
         Returns:
             The newly created transition.
