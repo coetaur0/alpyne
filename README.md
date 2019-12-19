@@ -17,8 +17,6 @@ To install _Alpyne_, simply clone this repository and run the command `pip3 inst
 root (and preferably inside of a [virtual environment](https://docs.python.org/3/tutorial/venv.html)).
 Once this is done, the package can be used like any other Python library.
 
----
-
 ## Usage
 
 ### Algebraic Data Types (ADTs)
