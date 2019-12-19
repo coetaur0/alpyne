@@ -1,7 +1,7 @@
 import unittest
-from alpynet.adt import Sort
-from alpynet.apn import Place, Transition, Arc, AlgebraicPetriNet
-from alpynet.exceptions import ConsumeException, FiringException
+from alpyne.adt import Sort
+from alpyne.apn import Place, Transition, Arc, AlgebraicPetriNet
+from alpyne.exceptions import ConsumeException, FiringException
 
 
 class TestPlace(unittest.TestCase):
