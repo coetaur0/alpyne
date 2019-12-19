@@ -1,23 +1,31 @@
-# ALgebraic PYthon NETs
-Algebraic Petri Nets in Python
+# Alpyne - Algebraic Petri Nets with Python
 
-AlPyNet is a package that serves two purposes. First, it allows for the definition of algebraic data types (ADTs) and term 
-rewriting systems. The second and main purpose of the library is however to provide a utility to build and use Algebraic Petri
-Nets (APNs) in Python.
+**_Alpyne_** is a package designed for the construction and verification of Algebraic Petri Nets with Python.
+
+_Algebraic Petri Nets_ (APNs) are a high order variant of Petri Nets, a class of models typically used
+in the verification of concurrent software. The objective of Alpyne is to provide a framework to build
+models of concurrent programs with APNs and to automatically check properties on them.
 
 ## Installation
 
-To install AlPyNet, simply clone this repository and run the command `pip3 install --upgrade .`. The package is also available 
-on PyPi and can be directly installed with the command `pip3 install alpynet`.
+To install _Alpyne_, simply clone this repository and run the command `pip3 install --upgrade .` at its
+root (and preferably inside of a [virtual environment](https://docs.python.org/3/tutorial/venv.html)).
+Once this is done, the package can be used like any other Python library.
 
 ## Usage
 
-### ADTs
+### Algebraic Data Types (ADTs)
 
-To define and use ADTs, the `alpynet.adt` module of this package can be used. Several examples of definitions of ADTs are 
-provided with this package in the */alpynet/adts* folder of this repository.
+Algebraic Petri Nets are built on top of the concept of _Algebraic Data Types_ (a.k.a. ADTs -- mathematically
+formalised data structures described with the help of _many-sorted algebrae_, _axioms_ and _rewrite rules_ --
+see [Sannella and Tarlecki](https://www.springer.com/gp/book/9783642173356) for an in-depth discussion on the
+subject).
 
-### APNs
+Before an Algebraic Petri Net can be built, the sorts of the terms it uses as tokens need to be defined. This
+can be done with the `adt` module of this package. Examples of definitions of ADTs can be found in the 
+*/alpyne/adts* folder of this repository, where the ADTs of base sorts such as booleans or naturals are defined.
 
-To define and use APNs, the `alpynet.apn` module of this package can be used. An example of script that builds and executes an 
-APN to compute the Fibonacci sequence is provided in the */examples* folder of this repository.
+### Algebraic Petri Nets (APNs)
+
+To define and use APNs, the `apn` module of this package can be used. An example of script that builds and
+executes an APN to compute the Fibonacci sequence is provided in the */examples* folder of this repository.

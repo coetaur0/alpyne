@@ -1,5 +1,5 @@
 import unittest
-from alpynet.adt import Sort, GenericSort, Operation, Variable, Term, RewriteRule
+from alpyne.adt import Sort, GenericSort, Operation, Variable, Term, RewriteRule
 
 
 class TestSort(unittest.TestCase):

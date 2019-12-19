@@ -1,7 +1,7 @@
 #!usr/bin/python3
 
-from alpynet.adts.natural import nat
-from alpynet.apn import AlgebraicPetriNet
+from alpyne.adts.natural import nat
+from alpyne.apn import AlgebraicPetriNet
 
 
 # Useful variables.
