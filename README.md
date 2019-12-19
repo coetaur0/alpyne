@@ -18,8 +18,8 @@ Once this is done, the package can be used like any other Python library.
 
 Algebraic Petri Nets are built on top of the concept of _Algebraic Data Types_ (a.k.a. ADTs -- mathematically
 formalised data structures described with the help of _many-sorted algebrae_, _axioms_ and _rewrite rules_ --
-see [Sannella and Tarlecki](https://www.springer.com/gp/book/9783642173356) for an in-depth discussion on the
-subject).
+see the book by [Sannella and Tarlecki](https://www.springer.com/gp/book/9783642173356) for an in-depth 
+discussion on the subject).
 
 Before an Algebraic Petri Net can be built, the sorts of the terms it uses as tokens need to be defined. This
 can be done with the `adt` module of this package. Examples of definitions of ADTs can be found in the 
