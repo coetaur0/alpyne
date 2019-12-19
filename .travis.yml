@@ -2,9 +2,12 @@ language: python
 python:
   - "3.8"
 before_install:
+  - pip install -U pip
+  - - pip install -U pytest
   - pip install codecov
 install:
-  - pip install --upgrade ".[test]" .
-script: pytest
+  - pip install -U .
+script:
+  - pytest
 after_success:
   - codecov
