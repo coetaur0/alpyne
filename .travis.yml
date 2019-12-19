@@ -1,0 +1,10 @@
+language: python
+python:
+  - "3.8"
+before_install:
+  - pip3 install codecov
+install:
+  - pip install --upgrade ".[test]" .
+script: pytest
+after_success:
+  - codecov
