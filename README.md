@@ -3,17 +3,23 @@
 [![Build Status](https://travis-ci.com/coetaur0/alpyne.svg?branch=master)](https://travis-ci.com/coetaur0/alpyne)
 [![codecov](https://codecov.io/gh/coetaur0/alpyne/branch/master/graph/badge.svg)](https://codecov.io/gh/coetaur0/alpyne)
 
+---
+
 **_Alpyne_** is a package designed for the construction and verification of Algebraic Petri Nets with Python.
 
 _Algebraic Petri Nets_ (APNs) are a high order variant of Petri Nets, a class of models typically used
 in the verification of concurrent software. The objective of Alpyne is to provide a framework to build
 models of concurrent programs with APNs and to automatically check properties on them.
 
+---
+
 ## Installation
 
 To install _Alpyne_, simply clone this repository and run the command `pip3 install --upgrade .` at its
 root (and preferably inside of a [virtual environment](https://docs.python.org/3/tutorial/venv.html)).
 Once this is done, the package can be used like any other Python library.
+
+---
 
 ## Usage
 
