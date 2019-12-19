@@ -1,5 +1,8 @@
 # Alpyne - Algebraic Petri Nets with Python
 
+[![Build Status](https://travis-ci.com/coetaur0/alpyne.svg?branch=master)](https://travis-ci.com/coetaur0/alpyne)
+[![codecov](https://codecov.io/gh/coetaur0/alpyne/branch/master/graph/badge.svg)](https://codecov.io/gh/coetaur0/alpyne)
+
 **_Alpyne_** is a package designed for the construction and verification of Algebraic Petri Nets with Python.
 
 _Algebraic Petri Nets_ (APNs) are a high order variant of Petri Nets, a class of models typically used
